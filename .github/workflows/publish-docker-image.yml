@@ -40,9 +40,6 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Build Docker Image
-        run: make -C main build
-        
       - name: Install Dev Dependencies
         run: |
           python -m pip install --upgrade pip
