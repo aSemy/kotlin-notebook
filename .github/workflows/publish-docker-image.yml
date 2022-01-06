@@ -45,8 +45,8 @@ jobs:
           python -m pip install --upgrade pip
           make -C main test-env
           
-      - name: Test Docker Image
-        run: make -C main test
+#       - name: Test Docker Image
+#         run: make -C main test
 
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
